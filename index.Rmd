@@ -67,7 +67,7 @@ This is a 4-credit course with 3 hours per week of in-classroom instructions. Sm
 
 ## How will I be graded?
 
-This course will be graded via a [grading contract](grading_contract.hml).
+This course will be graded via a [grading contract](grading_contract.html).
 
 ## What are the course policies?
 
