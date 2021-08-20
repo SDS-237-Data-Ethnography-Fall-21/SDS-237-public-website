@@ -8,9 +8,11 @@ output: rmdformats::readthedown
 # Syllabus 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 library(emo)
 ```
+
+
 
 ## What is this course about?
 
@@ -29,8 +31,13 @@ Classes will be held on Tuesdays and Thursdays from 1:20 PM to 2:35 PM in Seelye
 
 ## Who is the instructor?
 
-### [Lindsay Poirier](https://www.smith.edu/academics/faculty/lindsay-poirier)
+### [Lindsay Poirier](https://www.smith.edu/academics/faculty/lindsay-poirier) 
 
+#### she/her/hers
+
+```{r, out.width = "200px", out.extra='style="float:right; padding:10px"'}
+knitr::include_graphics("https://www.smith.edu/sites/default/files/styles/img-faculty-detail/public/media/Faculty/Lindsay-Poirier.jpg?itok=e_p62zj6")
+```
 I am a cultural anthropologist that studies how civic data gets produced, how communities think about and interface with data, and how data infrastructure can be designed more equitably. My Ph.D. is in an interdisciplinary discipline called Science and Technology Studies - a field that studies the intricate ways science, technology, culture, and politics all co-constitute each other. I work on a number of collaborative research projects that leverage public data to deepen understanding of social and environmental inequities in the US, while also qualitatively studying the politics behind data gaps and inconsistencies. As an instructor, I prioritize active learning and often structure courses as flipped classrooms. You can expect in-class time to predominantly involve group activities and live problem-solving exercises.
 
 ### How can I get in touch with the instructor?
@@ -48,9 +55,13 @@ The fastest way to get in touch with me is via Slack. If you have course related
 
 Student consultation hours are a great opportunity for us to chat about what you're learning in the course, clarify expectations on assignments, and review work in progress. I also love when students drop in to consultation hours to request book recommendations, discuss career or research paths, or just to say hi! I encourage each student in the course to visit my office (physical or virtual) at least once this semester. If you're unable to attend my consultation hours at the regularly scheduled time, feel free to direct message me on Slack to coordinate a time. 
 
+```{r, out.width = "100px", out.extra='style="float:right; margin-left:20px"'}
+knitr::include_graphics("https://www.dukeupress.edu/Assets/Books/978-0-8223-7089-5_pr.jpg")
+```
+
 ## What are the course texts?
 
-This semester we will be reading Crystal Biruk's [**Cooking Data: Culture and Politics in an African Research World**](https://www.dukeupress.edu/cooking-data). The book should be available at the Smith bookstore. I will make all other course readings available on Perusall, which can be accessed through our course Moodle page.
+This semester we will be reading Crystal Biruk's [**Cooking Data: Culture and Politics in an African Research World**](https://www.dukeupress.edu/cooking-data). The book should be available at the Smith bookstore. I will make all other course readings available on Perusall, which can be accessed through our course Moodle page. 
 
 ## How much time should I expect to prepare for this course?
 
@@ -149,7 +160,7 @@ Contributing regularly to Slack is one way to earn engagement credit.
 
 ### GitHub and GitHub Classroom
 
-I will be using GitHub Classroom to distribute final project assignments, and you will submit assignments by pushing changes to template documents that I provide to a private GitHub repository. Early checkpoints towards the final project will help you navigate how we will use GitHub in this course. 
+I will be using GitHub Classroom to distribute final project assignments, and you will submit assignments by pushing changes to template documents to a private GitHub repository. Early checkpoints towards the final project will help you navigate how we will use GitHub in this course. 
 
 ### RStudio
 

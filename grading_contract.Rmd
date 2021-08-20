@@ -26,7 +26,7 @@ There are many benefits to contract grading. Here are there reasons why I've opt
 
 ## Assignment completion
 
-For an assignment to be considered complete, it must meet the minimum criteria outlined in Moodle. It also must be completed "in good faith" - meaning in a way that show integrity to the spirit of the assignment. Note that you have at least one "gimme" for each assignment in this course. This means that if for some reason there was a misunderstanding of the expectations for completion, in most cases, you will have an opportunity to try again as long as you haven't already missed other assignments in the same category.
+For an assignment to be considered complete, it must meet the minimum criteria outlined in Moodle. It also must be completed "in good faith" - meaning in a way that demonstrates integrity to the spirit of the assignment. Note that you have at least one "gimme" for each assignment in this course. This means that if for some reason there was a misunderstanding of the expectations for completion, in most cases, you will have an opportunity to try again as long as you haven't already missed other assignments in the same category.
 
 ## Assignments
 
@@ -59,19 +59,19 @@ Ethnography is at its best when it involves collaborative inquiry and interpreta
 | Points | Labor | Max Points | 
 |---|---|---|
 | +1 | Contribute a unique term to our Data Ethnography glossary on Moodle. Define the term, citing relevant sources. | 2 |
-| +1 | Start a discussion thread on course-relevant topic in the #general channel on Slack. Respond to at least one other person on the thread.*  | 4 |
+| +1 | Start a discussion thread on course-relevant topic in the #general channel on Slack. Respond to at least one other person on the thread.^1^  | 4 |
 | +0.5 | Respond to a discussion thread on Slack. | 3 |
 | +1 | Attend student consultation hours. | 2 |
 | +2 | Participate in a peer-review workshop in preparation for revising mini-projects. | 2 |
-| +1 | Lead an opening check-in.** | 1 |
-| +1 | At the conclusion of a class session, summarize three take-aways.*** | 1 |
+| +1 | Lead an opening check-in.^2^ | 1 |
+| +1 | At the conclusion of a class session, summarize three take-aways.^3^ | 1 |
 | +1 | Suggest a data event for peers to potentially study in the #sds-237-participant-observation Slack channel | 1 |
 
-> * Note that this is separate from asking a question about the course administration or assignments in the #sds-237-questions channel.
+> ^1^Note that this is separate from asking a question about the course administration or assignments in the #sds-237-questions channel.
 
-> *Each class we will start out by participating in a collaborative poll to check-in with where our heads are. If you sign up to lead an opening check-in, you will create this opening poll by adding a slide to a deck I will make available on Moodle. Instructions for doing so will be available on the Slide. Then at the start of class, you will be called upon to launch/lead your check-in poll. You can sign-up to lead this opening session via a Scheduler on Moodle.
+> ^2^Each class we will start out by participating in a collaborative poll to check-in with where our heads are. If you sign up to lead an opening check-in, you will create this opening poll by adding a slide to a deck I will make available on Moodle. Instructions for doing so will be available on the Slide. Then at the start of class, you will be called upon to launch/lead your check-in poll. You can sign-up to lead this opening session via a Scheduler on Moodle.
 
-> **Two students will have an opportunity to summarize their three take-aways at the end of every class session. Priority will be given to students who have not had an opportunity to earn these points yet. 
+> ^3^Two students will have an opportunity to summarize the three take-aways at the end of every class session. Priority will be given to students who have not had an opportunity to earn these points yet. 
 
 ## Enrichment
 
