@@ -21,7 +21,7 @@ There are many benefits to contract grading. Here are there reasons why I've opt
 | A | 3 or fewer | 1 | 2 + 1 substantive revision | 2 | 3 | 8 | 3 |
 | B | 3 or fewer | 1 | 2 + 1 substantive revision| 2 | 3 | 8 | 0 |
 | C | 4 or fewer | 2 | 1 + 1 substantive revision| 3 | 4 | 6 | 0 |
-| D | 5 or fewer | 3 | 1, no revision | 3 | 4 | 4 | 0 |
+| D | 5 or fewer | 3 | 1, no revision | 4 | 5 | 4 | 0 |
 | E | 6 or fewer | 4 or more | 0 | 5 or more | 6 or more | 2 or fewer | 0 |
 
 ## Assignment completion
