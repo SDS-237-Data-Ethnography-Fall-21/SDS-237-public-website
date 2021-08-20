@@ -1,0 +1,206 @@
+---
+title: "Schedule"
+output: rmdformats::readthedown
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Sept. 2 Introductions
+
+## Sept. 7 If Big Data were a Person
+
+* TechWebTV. 2012. Anthropologist for Intel Describes Big Data as a Person. Accessed August 20, 2021. https://www.youtube.com/watch?v=WVB6_QP_2s0&ab_channel=TechWebTV.
+* Onuoha, Mimi. 2016. "The Point of Collection." Medium. October 31, 2016. https://points.datasociety.net/the-point-of-collection-8ee44ad7c2fa.
+* Project Checkpoint 1: Fill out CATME Survey
+
+> We will be using CATME to collect information for creating equitable project teams this semester. In the first week of class, you will receive an email from CATME with instructions on how to fill out a survey. To complete this checkpoint, you should follow these instructions. 
+
+### Optional further reading:
+
+* boyd, danah, and Kate Crawford. 2012. "Critical Questions for Big Data." Information, Communication & Society 15 (5): 662–79. https://doi.org/10.1080/1369118X.2012.678878.
+* Kitchin, Rob. 2013. "Big Data and Human Geography Opportunities, Challenges and Risks." Dialogues in Human Geography 3 (3): 262–67. https://doi.org/10.1177/2043820613513388.
+* Ruppert, Evelyn. 2013. "Rethinking Empirical Social Sciences." Dialogues in Human Geography 3 (3): 268–73. https://doi.org/10.1177/2043820613514321.
+
+## Sept. 9 Metaphors of Big Data
+
+* Puschmann, Cornelius, and Jean Burgess. 2014. "Metaphors of Big Data." International Journal of Communication 8 (0): 20.
+
+## Sept. 14 Thick Data for Big Data
+
+* Fiore-Silfvast, Brittany. 2014. "Hacked Ethnographic Fieldnotes." Astro Hack Week. October 1, 2014. http://astrohackweek.github.io/blog/ethnographic-notes.html.
+* Burrell, Jenna. 2012. "The Ethnographer’s Complete Guide to Big Data: Small Data People in a Big Data World." Ethnography Matters. May 28, 2012. http://ethnographymatters.net/blog/2012/05/28/small-data-people-in-a-big-data-world/.
+* Project Checkpoint 2: [Practice GitHub Classroom and Markdown](https://github.com/SDS-237-Data-Ethnography/getting-started)
+
+### Optional further reading:
+
+* Wang, Tricia. 2013. "Big Data Needs Thick Data." Ethnography Matters. May 13, 2013. http://ethnographymatters.net/blog/2013/05/13/big-data-needs-thick-data/.
+* Beaton, Brian. 2016. "How to Respond to Data Science: Early Data Criticism by Lionel Trilling." Information & Culture 51 (3): 352–72. https://doi.org/10.7560/IC51303.
+
+## Sept. 16 Ethnography in Data Land
+
+* Read: Introduction Cooking Data
+
+## Sept. 21 Data Assemblages
+
+* Kitchin, Rob, and Tracey P. Lauriault. 2014. "Towards Critical Data Studies: Charting and Unpacking Data Assemblages and Their Work." SSRN Scholarly Paper ID 2474112. Rochester, NY: Social Science Research Network. https://papers.ssrn.com/abstract=2474112.
+* Project Checkpoint 3: [Group Contract](https://github.com/SDS-237-Data-Ethnography/group-contract)
+
+### Optional further reading:
+
+* Hacking, Ian. 2006. "Making Up People." London Review of Books 28 (August).
+* 
+
+## Sept. 23 Scaffolding Data Infrastructures
+
+* Read: Chapter 1, Cooking Data
+* Field Notebook Entry 1
+
+## Sept. 28 Becoming a Data Scientist
+
+* Lowrie, Ian. 2018. "Becoming a Real Data Scientist Expertise, Flexibility and Lifelong Learning." In Ethnography for a Data Saturated World, edited by Hannah Knox and Dawn Nafus. Manchester University Press. https://www.manchesterhive.com/view/9781526127600/9781526127600.00020.xml.
+* Project Checkpoint 4: Semiotic Analysis
+
+## Sept. 30 Labor of Data Production
+
+* Read: Chapter 2, Cooking Data
+
+## Oct. 5 Construction of Data Work
+
+* Forsythe, Diana E. 1993. "The Construction of Work in Artificial Intelligence." Science, Technology, & Human Values 18 (4): 460–79. https://doi.org/10.1177/016224399301800404.
+* Project Checkpoint 5: Peopling a Dataset
+
+### Optional further reading:
+
+* Irani, Lilly. 2015. "Justice for ‘Data Janitors.’" Public Books (blog). January 15, 2015. https://www.publicbooks.org/justice-for-data-janitors/.
+* Plantin, Jean-Christophe. 2019. "Data Cleaners for Pristine Datasets: Visibility and Invisibility of Data Processors in Social Science." Science, Technology, & Human Values 44 (1): 52–73. https://doi.org/10.1177/0162243918781268.
+* Seaver, Nick. 2021. "Care and Scale: Decorrelative Ethics in Algorithmic Recommendation." Cultural Anthropology 36 (3): 509-537-509–37. https://doi.org/10.14506/ca36.3.11.
+
+
+## Oct. 7 Data in the Field
+
+* Read: Chapter 3, Cooking Data
+* Field Notebook Entry 2
+
+## Oct. 12 - NO CLASS
+
+## Oct. 14 Lab Day
+
+* Project Checkpoint 6: Documentary Analysis, Part 1
+* Mini-Project 1 Due
+
+## Oct. 19 How Data Domesticates Us
+
+* Ribes, David, and Steven J Jackson. 2013. "Data Bite Man: The Work of Sustaining a Long-Term Study." In Raw Data" Is an Oxymoron, edited by Lisa Gitelman, 147–66. Cambridge, MA: MIT Press.
+* Project Checkpoint 7: Revisions of 1-5
+
+### Optional further reading:
+
+* Bowker, Geoffrey C. 2000. "Biodiversity Datadiversity." Social Studies of Science 30 (5): 643–83. https://doi.org/10.1177/030631200030005001.
+* Walford, Antonia. 2017. "Raw Data: Making Relations Matter." Social Analysis 61 (2): 65–80. https://doi.org/10.3167/sa.2017.610205.
+
+
+## Oct. 21 Cooking Data
+
+* Reading: Chapter 4 Cooking Data
+* Field Notebook Entry 3
+
+## Oct. 26 Narrating Data
+
+* Dourish, Paul, and Edgar Gómez Cruz. 2018. "Datafication and Data Fiction: Narrating Data and Narrating with Data." Big Data & Society 5 (2): 2053951718784083. https://doi.org/10.1177/2053951718784083.
+* Project Checkpoint 8: Documentary Analysis, Part 2
+
+### Optional further reading: 
+
+* Bates, Jo, Yu-Wei Lin, and Paula Goodale. 2016. "Data Journeys: Capturing the Socio-Material Constitution of Data Objects and Flows." Big Data & Society 3 (2): 2053951716654502. https://doi.org/10.1177/2053951716654502.
+* Leonelli, Sabina. 2010. "Packaging Small Fact for Re-Use: Databases in Model Organism Biology." In How Well Do Facts Travel?: The Dissemination of Reliable Knowledge, edited by Peter Howlett and Mary S. Morgan, 325–48. Cambridge, MA: Cambridge University Press.
+
+## Oct. 28 Data Journeys
+
+* Reading: Chapter 5, Cooking Data
+
+## Nov. 2 Data Documentation
+
+* Project Checkpoint 9: Discourse Analysis
+* Field Notebook Entry 4
+
+### Optional further reading:
+
+* Gebru, Timnit, Jamie Morgenstern, Briana Vecchione, Jennifer Wortman Vaughan, Hanna Wallach, Hal Daumé III, and Kate Crawford. 2020. "Datasheets for Datasets." ArXiv:1803.09010 [Cs], March. http://arxiv.org/abs/1803.09010.
+* Bender, Emily M., and Batya Friedman. 2018. "Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science." Transactions of the Association for Computational Linguistics 6 (December): 587–604. https://doi.org/10.1162/tacl_a_00041.
+
+## Nov. 4 - NO CLASS
+
+## Nov. 9 Ethnographies of Infrastructure
+
+* Star, Susan Leigh. 1999. "The Ethnography of Infrastructure." American Behavioral Scientist 43 (3): 377–91. https://doi.org/10.1177/00027649921955326.
+* Project Checkpoint 10: Revisions
+
+### Optional further reading:
+
+* Bowker, Geoffrey, Karen Baker, Florence Millerand, and David Ribes. 2009. "Toward Information Infrastructure Studies: Ways of Knowing in a Networked Environment." In International Handbook of Internet Research, edited by Jeremy Hunsinger, Lisbeth Klastrup, and Matthew Allen, 97–117. Springer Netherlands. https://doi.org/10.1007/978-1-4020-9789-8_5.
+* Lampland, Martha, and Susan Leigh Star, eds. 2008. Standards and Their Stories: How Quantifying, Classifying, and Formalizing Practices Shape Everyday Life. 1 edition. Ithaca: Cornell University Press.
+* Ottinger, Gwen. 2010. "Buckets of Resistance: Standards and the Effectiveness of Citizen Science." Science, Technology, & Human Values 35 (2): 244–70. https://doi.org/10.1177/0162243909337121.
+
+## Nov. 11 Sorting Things Out
+
+* Bowker, Geoffrey C. 1998. "The Kindness of Strangers: Kinds and Politics in Classification Systems." https://www.ideals.illinois.edu/handle/2142/8207.
+* Mini-Project 2 Due
+
+### Optional further reading:
+
+* Bowker, Geoffrey C., and Susan Leigh Star. 1999. Sorting Things Out: Classification and Its Consequences. Cambridge, MA: MIT Press.
+* Waterton, Claire. 2002. "From Field to Fantasy: Classifying Nature, Constructing Europe." Social Studies of Science 32 (2): 177–204. https://doi.org/10.1177/0306312702032002001.
+* Kirksey, Eben. 2015. "Species: a praxiographic study." Journal of the Royal Anthropological Institute 21 (4): 758–80. https://doi.org/10.1111/1467-9655.12286.
+
+## Nov. 16 Geo-politics of Data
+
+* Frickel, Scott. 2008. "On Missing New Orleans: Lost Knowledge and Knowledge Gaps in an Urban Hazardscape." Environmental History 13 (4): 643–50.
+* Project Checkpoint 11: Categorical Analysis
+
+### Optional further reading:
+
+* Crutcher, Michael, and Matthew Zook. 2009. "Placemarks and Waterlines: Racialized Cyberscapes in Post-Katrina Google Earth." Geoforum, Themed Issue: The ‘view from nowhere’? Spatial politics and cultural significance of high-resolution satellite imagery, 40 (4): 523–34. https://doi.org/10.1016/j.geoforum.2009.01.003.
+* Graham, Mark, Stefano De Sabbata, and Matthew A. Zook. 2015. "Towards a Study of Information Geographies: (Im)Mutable Augmentations and a Mapping of the Geographies of Information." Geo: Geography and Environment 2 (1): 88–105. https://doi.org/10.1002/geo2.8.
+* Kinchy, Abby, Sarah Parks, and Kirk Jalbert. 2015. "Fractured Knowledge: Mapping the Gaps in Public and Private Water Monitoring Efforts in Areas Affected by Shale Gas Development." Environment and Planning C: Government and Policy, December, 0263774X15614684. https://doi.org/10.1177/0263774X15614684.
+
+## Nov. 18 Chrono-politics of Data
+
+* Liboiron, Max. 2015. "Disaster Data, Data Activism: Grassroots Responses to Representing Superstorm Sandy." In Extreme Weather and Global Media, edited by Julia Leyda and Diane Negra. Taylor & Francis Group. https://doi.org/10.4324/9781315756486-7.
+* Field Notebook Entry 5
+
+## Nov. 23 - PROJECT CONSULTATIONS
+
+* Mini-Project Peer Review Workshop
+* Project Checkpoint 12: Chrono-politics and geo-politics
+
+## Nov. 25 - NO CLASS
+
+## Nov. 30 On Missingness
+
+* mimimimimi. (2016) 2021. On Missing Data Sets. https://github.com/MimiOnuoha/missing-datasets.
+* Project Checkpoint 13: Knowledge gaps
+
+### Optional further reading:
+
+* D’Ignazio, Catherine, and Lauren F. Klein. 2020. Data Feminism. Cambridge, Massachusetts: The MIT Press.
+* Milan, Stefania. 2020. "Techno-Solutionism and the Standard Human in the Making of the COVID-19 Pandemic." Big Data & Society 7 (2): 2053951720966781. https://doi.org/10.1177/2053951720966781.
+* Levy, Karen EC, and David Merritt Johns. 2016. "When Open Data Is a Trojan Horse: The Weaponization of Transparency in Science and Governance." Big Data & Society 3 (1): 2053951715621568. https://doi.org/10.1177/2053951715621568.
+
+## Dec. 2 Juking the Stats
+
+* Barry-Jester, Anna Maria. 2016. "What Went Wrong In Flint." FiveThirtyEight (blog). January 26, 2016. https://fivethirtyeight.com/features/what-went-wrong-in-flint-water-crisis-michigan/.
+* Field Notebook Entry 6
+
+### Optional further reading:
+
+* Beer, David. 2016. Metric Power. Palgrave Macmillan UK. https://doi.org/10.1057/978-1-137-55649-3.
+
+## Dec. 7 Final Project Presentations
+
+* Project Checkpoint 14: Revisions and Final Presentation
+
+## Dec. 9 Final Project Presentations
+
+* Mini-Project Revisions Due
