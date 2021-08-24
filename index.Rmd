@@ -25,7 +25,7 @@ Without rich documentation, quantitative data can strip away critical context ne
 
 ## When and where does this course meet?
 
-Classes will be held on Tuesdays and Thursdays from 1:20 PM to 2:35 PM in Seelye 106. 
+Classes will be held on Tuesdays and Thursdays from 9:25 PM to 10:40 PM in Seelye 106. 
 
 ## Who is the instructor?
 
@@ -73,7 +73,7 @@ This course will be graded via a [grading contract](grading_contract.html).
 
 ### What is the course policy on attendance?
 
-Classroom discussions and activities will provide you with an opportunity to work through complex concepts and apply and reflect on what you've learned in course readings in collaboration with your classmates. Attending class is not only supporting your own success in this course, but is also an act of community. All but two absences will count in calculating the grade, but I will be flexible and considerate in specific cases. If you are sick or burnt out, please stay home (even if you've already surpassed the absences allotted for your contracted grade). In these cases, reach out to me in advance of class so that we can coordinate a make-up assignment. You should be present for at least 75% of the class period for your attendance to count.
+Classroom discussions and activities will provide you with an opportunity to work through complex concepts and apply and reflect on what you've learned in course readings in collaboration with your colleagues. Attending class is not only supporting your own success in this course, but is also an act of community. All but three absences will count in calculating the grade, but I will be flexible and considerate in specific cases. If you are sick or burnt out, please stay home (even if you've already surpassed the absences allotted for your contracted grade). In these cases, reach out to me in advance of class so that we can coordinate a make-up assignment. You should be present for at least 75% of the class period for your attendance to count.
 
 ### What is the course policy on late assignments?
 
@@ -93,7 +93,14 @@ If you are struggling to keep up with the readings, please reach out to me. I'm 
 
 > Smith College expects all students to be honest and committed to the principles of academic and intellectual integrity in their preparation and submission of course work and examinations. Students and faculty at Smith are part of an academic community defined by its commitment to scholarship, which depends on scrupulous and attentive acknowledgement of all sources of information, and honest and respectful use of college resources.
 
-Any cases of dishonesty or plagiarism will be reported to the Academic Honor Board.
+Any cases of dishonesty or plagiarism will be reported to the Academic Honor Board. Examples of dishonesty or plagiarism include:
+
+* Submitting work completed by another student as your own.
+* Copying and pasting words from sources without quoting and citing the author.
+* Paraphrasing material from another source without citing the author.
+* Failing to cite your sources correctly. 
+* Falsifying or misrepresenting information in submitted work.
+* Paying another student or service to complete assignments for you.
 
 ## How will we cultivate an inclusive and equitable community both in and outside of the classroom?
 
@@ -112,10 +119,10 @@ This Code of Conduct is adapted from the [Contributor Covenant](https://www.cont
 I hope that we can foster a collaborative and caring environment in this classroom: one that celebrates successes, respects individual strengths and weaknesses, demonstrates compassion for each other's struggles, and affirms diverse identities  Here are some ideas that I have for creating this environment in our course:
 
 * If a classmate helps you out on an assignment, says something brilliant that solidifies the material for you, or just listens when you've had a bad day, give them a shout-out on our #sds-237-appreciation Slack channel. 
-* Check-in with classmates before starting collaborative work. "What three words describe how you're feeling?" "Name one challenge and one success from this week." "What are you doing for self-care right now?" Thank each other for sharing where they're at.
+* Check-in with colleagues before starting collaborative work. "What three words describe how you're feeling?" "Name one challenge and one success from this week." "What are you doing for self-care right now?" Thank each other for sharing where they're at.
 * Consider when to step up and when to step back in class discussions, creating space for others to contribute. Listening is just as important to community-building as speaking. 
-* Acknowledge that there is much we don't know about how our peers experience the world. ...but don't ask peers to speak on behalf of a social group you perceive them to be a part of. 
-* Cheer on classmates as they give presentations or try something out for the first time. 
+* Acknowledge that there is much we don't know about how our colleagues experience the world. ...but don't ask colleagues to speak on behalf of a social group you perceive them to be a part of. 
+* Cheer on colleagues as they give presentations or try something out for the first time. 
 * Ask questions often in our #sds-237-questions channel. Help each other out by answering questions when you can. 
 * Let us know about your successes in the #sds-237-celebrations channel. Successes come in all shapes and sizes. Some days getting out of bed is a success. Congratulate each other on all forms of successes. 
 * Mistakes happen. I will certainly make mistakes in class. Admit mistakes, and then move on.
@@ -130,7 +137,7 @@ It is my goal for everyone to succeed in this course. If you have personal circu
 
 ### Student Well-being
 
-College life is stressful, and life outside of college can be overwhelming. It is my position that attending to your physical and mental health and wellbeing should be a top priority. I will remind you of this often throughout the quarter. I encourage you to schedule a time to talk with me if you are struggling with this course. If you, or anyone you know, is experiencing distress, there are numerous campus resources that can provide support via the [Schacht Center](https://www.smith.edu/student-life/health-wellness). I can point you to these resources at any time throughout the quarter.
+College life is stressful, and life outside of college can be overwhelming. It is my position that attending to your physical and mental health and well-being should be a top priority. I will remind you of this often throughout the quarter. I encourage you to schedule a time to talk with me if you are struggling with this course. If you, or anyone you know, is experiencing distress, there are numerous campus resources that can provide support via the [Schacht Center](https://www.smith.edu/student-life/health-wellness). I can point you to these resources at any time throughout the quarter.
 
 ### Trigger Warnings
 
@@ -150,7 +157,7 @@ Aside from the main course text, all course readings and recorded lectures will 
 
 * #general: Course announcements and links to relevant news articles and opportunities 
 * #sds-237-questions: Ask and answer questions about our course
-* #sds-237-appreciation: Acknowledge peers that have been helpful
+* #sds-237-appreciation: Acknowledge colleagues that have been helpful
 * #sds-237-celebrations: Share success of all shapes and sizes
 * You can also create private Slack channels with your project group members. 
 

@@ -3,7 +3,7 @@ title: "Grading Contract"
 output: rmdformats::readthedown
 ---
 
-This course will be using a grading contract. This means that the grade you ultimately receive for this course is primarily based on the labor that you perform rather than a subjective evaluation of the quality of your work and writing in relation to your peers. Your grade will be determined by the extent of your engagement in class, your timely completion of assignments, and how you support the course community. You will still attend to and work to improve the quality of your writing and thinking in this course. You will receive extensive feedback on all of your submissions (from me and from your peers), and you will have opportunities to revise. However, you will not receive points or an A, B, C, D, etc. on assignments. 
+This course will be using a grading contract. This means that the grade you ultimately receive for this course is primarily based on the labor that you perform rather than a subjective evaluation of the quality of your work and writing in relation to your colleagues. Your grade will be determined by the extent of your engagement in class, your timely completion of assignments, and how you support the course community. You will still attend to and work to improve the quality of your writing and thinking in this course. You will receive extensive feedback on all of your submissions (from me and from your colleagues), and you will have opportunities to revise. However, you will not receive points or an A, B, C, D, etc. on assignments. 
 
 ## Why a grading contract?
 
@@ -12,7 +12,7 @@ There are many benefits to contract grading. Here are there reasons why I've opt
 * I want you to feel as though you can experiment with your writing in this course. Rather than focusing on what you think I want out of your assignments or "writing to the rubric," grading contracts empower you to take more risks. 
 * Grading contracts value the time and effort you put into the course and reward students who invest extra time in their learning. 
 * Grading contracts make it easier for you to anticipate the grade you will receive and plan for achieving that grade.
-* Grading contracts promote equity. With grades based entirely on labor, students aren't penalized for not entering the course with the same experience or background knowledge as their peers. 
+* Grading contracts promote equity. With grades based entirely on labor, students aren't penalized for not entering the course with the same experience or background knowledge as their colleagues. 
 
 ## Grade Breakdown
 
@@ -34,7 +34,7 @@ For an assignment to be considered complete, it must meet the minimum criteria o
 
 Please see attendance policy on the course [syllabus](index.html) for more information. 
 
-### Jounral Entries
+### Journal Entries
 
 Ethnographers keep field notebooks to thickly document what they observe in a social environment. Typically field notes will describe a physical environment and the participants in that environment (including appearances, roles, behaviors, moods, interactions, conversations, etc.). Field notes will also interpret what was observed, considering how the empirical material affirms, contests, or transforms how we understand cultural phenomena. In data ethnography, the social environment under consideration can be anywhere data is produced, applied, presented, or talked about. 
 
@@ -65,7 +65,7 @@ Ethnography is at its best when it involves collaborative inquiry and interpreta
 | +2 | Participate in a peer-review workshop in preparation for revising mini-projects. | 2 |
 | +1 | Lead an opening check-in.^2^ | 1 |
 | +1 | At the conclusion of a class session, summarize three take-aways.^3^ | 1 |
-| +1 | Suggest a data event for peers to potentially study in the #sds-237-participant-observation Slack channel | 1 |
+| +1 | Suggest a data event for colleagues to potentially study in the #sds-237-participant-observation Slack channel | 1 |
 
 > ^1^Note that this is separate from asking a question about the course administration or assignments in the #sds-237-questions channel.
 
@@ -90,3 +90,7 @@ Throughout the semester, you will be asked to keep track of your labor via a log
 
 +/- will be assigned to final grades at my discretion in cases where a student's work consistently exceeds the expectations (+) of their contracted grade or is in some way insufficient (-). Students can track their progress towards a grade modifier in feedback that I provide throughout the semester. 
 
+## Acknowledgements
+
+Grading contracts have been theorized and implemented in the research of Dr. Peter Elbow
+and Dr. Asao Inoue. This grading contract is adapted from their work, along with the contracts of Dr. Kate Navickas and Dr. Kati Ahern.
