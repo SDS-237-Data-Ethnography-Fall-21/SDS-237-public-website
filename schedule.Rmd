@@ -165,6 +165,10 @@ knitr::opts_chunk$set(echo = TRUE)
 * Liboiron, Max. 2015. "Disaster Data, Data Activism: Grassroots Responses to Representing Superstorm Sandy." In *Extreme Weather and Global Media*, edited by Julia Leyda and Diane Negra. Taylor & Francis Group. https://doi.org/10.4324/9781315756486-7.
 * Field Notebook Entry 5
 
+### Optional further reading:
+
+* Data for Black Lives. 2019. “The Seas Are Rising but so Are the People”: Data, Disaster & Collective Power. https://www.youtube.com/watch?v=iLBzLY1MEgA&ab_channel=DataforBlackLives.
+
 ## Nov. 23 - PROJECT CONSULTATIONS
 
 * Mini-Project Peer Review Workshop
