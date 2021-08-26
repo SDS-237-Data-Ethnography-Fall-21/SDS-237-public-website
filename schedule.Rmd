@@ -73,6 +73,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### Optional further reading:
 
+* Gray, Mary L., and Siddharth Suri. 2019. *Ghost Work: How to Stop Silicon Valley from Building a New Global Underclass*. Illustrated edition. Boston: Mariner Books.
 * Irani, Lilly. 2015. "Justice for ‘Data Janitors.’" *Public Books (blog)*. January 15, 2015. https://www.publicbooks.org/justice-for-data-janitors/.
 * Plantin, Jean-Christophe. 2019. "Data Cleaners for Pristine Datasets: Visibility and Invisibility of Data Processors in Social Science." *Science, Technology, & Human Values* 44 (1): 52–73. https://doi.org/10.1177/0162243918781268.
 
