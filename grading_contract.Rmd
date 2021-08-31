@@ -16,17 +16,21 @@ There are many benefits to contract grading. Here are there reasons why I've opt
 
 ## Grade Breakdown
 
-| Grade | Absences | Missed Journal Entries (out of 6) | Completed Mini-projects | Missed Checkpoints for Final Project | Incomplete Reading Annotations | Community Labor Points | Enrichment
+Each row indicates what labor you need to complete in the course to earn the grade indicated in the first column of that row. Note that to earn a particular grade *all* minimum labor criteria in the corresponding row must be met.
+
+| Grade | Absences | Missed Journal Entries (out of 6) | Completed Mini-projects | Missed Checkpoints for Final Project^1^ | Incomplete Reading Annotations | Community Labor Points | Enrichment
 |---|---|---|---|---|---|---|---|
-| A | 3 or fewer | 1 | 2 + 1 substantive revision | 2 | 3 | 8 | 3 |
-| B | 3 or fewer | 1 | 2 + 1 substantive revision| 2 | 3 | 8 | 0 |
-| C | 4 or fewer | 2 | 1 + 1 substantive revision| 3 | 4 | 6 | 0 |
-| D | 5 or fewer | 3 | 1, no revision | 4 | 5 | 4 | 0 |
-| E | 6 or fewer | 4 or more | 0 | 5 or more | 6 or more | 2 or fewer | 0 |
+| A | 3 or fewer | 1 or fewer | 2 + 1 substantive revision | 2 or fewer | 2 or fewer | 8 or more | 3 |
+| B | 3 or fewer | 1 or fewer | 2 + 1 substantive revision | 2 or fewer | 2 or fewer | 8 or more | 0 |
+| C | 4 or fewer | 2 or fewer | 1 + 1 substantive revision | 4 or fewer | 4 or fewer | 6 or more | 0 |
+| D | 5 or fewer | 3 or fewer | 1, no revision             | 6 or fewer | 6 or fewer | 4 or more | 0 |
+| E | 6 or more  | 4 or more  | 0                          | 7 or more  | 7 or more  | 3 or fewer| 0 |
+
+> ^1^Note that while you can miss final project checkpoints, a final draft must be submitted on time and a final presentation must be delivered in order to pass the course.
 
 ## Assignment completion
 
-For an assignment to be considered complete, it must meet the minimum criteria outlined in Moodle. It also must be completed "in good faith" - meaning in a way that demonstrates integrity to the spirit of the assignment. Note that you have at least one "gimme" for each assignment in this course. This means that if for some reason there was a misunderstanding of the expectations for completion, in most cases, you will have an opportunity to try again as long as you haven't already missed other assignments in the same category.
+For an assignment to be considered complete (i.e. not *missed*), it must meet the minimum criteria outlined in Moodle. It also must be completed "in good faith" - meaning in a way that demonstrates integrity to the spirit of the assignment. Note that you have at least one "gimme" for each assignment in this course. This means that if for some reason there was a misunderstanding of the expectations for completion, in most cases, you will have an opportunity to try again as long as you haven't already missed other assignments in the same category.
 
 ## Assignments
 
@@ -78,9 +82,9 @@ Ethnography is at its best when it involves collaborative inquiry and interpreta
 'A' grades will be assigned to students that meet the requirements to earn a 'B' in the course and enrich those assignments by doing three of the following. Timelines for completing enrichment must be coordinated with me in student consultation hours *by the end of the third week of the semester.*
 
 1. Lead a 30-minute class reading discussion. In this role, you will prepare a written discussion plan that summarizes the main arguments/key points of the assigned reading (in at least 250 words, lists 5 memorable quotes from the reading with page numbers, synthesizes 2-3 key issues that came up in the Perusall threads, lists out 3-4 discussion questions, and includes 5 links to relevant articles, videos, stories, images, etc, that you may reference during discussion. During class, you will summarize the week's reading and Perusall discussions in the first 5 minutes, and then lead the class discussion, drawing from your questions and materials. 
-2. Write a 500 to 750-word memo reflecting on your role as the researcher in one of your ethnographic mini-projects. Think of this like a meta-analysis of the research encounter. You might address questions like: How would you characterize your standpoint in relation to the research? In what ways did your background and situated knowledge inflect how you approached your research and what you took away from it? In what moments were there communication break-downs with your informants and why? What feelings came up for you during research? What ethical considerations were you grappling with as you engaged the research?
+2. Write a 500-600-word memo reflecting on your role as the researcher in one of your ethnographic mini-projects. Think of this like a meta-analysis of the research encounter. You might address questions like: How would you characterize your standpoint in relation to the research? In what ways did your background and situated knowledge inflect how you approached your research and what you took away from it? In what moments were there communication break-downs with your informants and why? What feelings came up for you during research? What ethical considerations were you grappling with as you engaged the research?
 3. Earn the maximum (16) community labor points. 
-4. Write a 500 to 750-word memo synthesizing and making broader connections across at least 4 of your journal entries. What have you learned about how data and culture co-constitute each other via your fieldnotes? You might think about how data discourse, education, expertise, or infrastructures materialize, operate, transform, or get contested. Be sure to cite specific examples from each of the entries in your response. 
+4. Write a 500-600-word memo synthesizing and making broader connections across at least 4 of your journal entries. What have you learned about how data and culture co-constitute each other via your fieldnotes? You might think about how data discourse, education, expertise, or infrastructures materialize, operate, transform, or get contested. Be sure to cite specific examples from each of the entries in your response. 
 
 ## Labor Log
 
