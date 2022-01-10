@@ -2,7 +2,6 @@
 title: "SDS 237: Data Ethnography"
 author: "Lindsay Poirier"
 date: "Last updated on `r Sys.Date()`"
-output: rmdformats::readthedown
 ---
 
 # Syllabus 
@@ -10,172 +9,102 @@ output: rmdformats::readthedown
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(emo)
+library(bsplus)
+library(htmltools)
 ```
 
-## What is this course about?
+::: {.float_image_right}
+```{r, out.width = "200px", fig.cap='Course logo designed by Zoe Scheffler, Fall \'21'}
+knitr::include_graphics("img/sds237logo.png")
+```
 
-Without rich documentation, quantitative data can strip away critical context needed to interpret values responsibly. This course introduces students to the theory and practice of data ethnography, demonstrating how qualitative data collection and analysis can be brought to bear on the study of data settings and artifacts. Through experiential exercises, students will learn techniques in field-note writing, participant observation, in-depth interviewing, documentary analysis, and archival research and how they may be used to contextualize the cultural underpinnings of datasets. Students will learn how to visualize datasets in ways that foreground their socio-political provenance in R. Students will also learn how ethnographic methods can be leveraged to improve data documentation and communication. The course will introduce debates regarding the politics of techno-scientific fieldwork.
+:::
 
-## What should I be able to do by the end of the course?
+Without rich documentation, quantitative data can strip away critical context needed to interpret values responsibly. This course introduces students to the theory and practice of data ethnography, demonstrating how qualitative data collection and analysis can be brought to bear on the study of data settings and artifacts. Through experiential exercises, students will learn techniques in field-note writing, participant observation, in-depth interviewing, documentary analysis, and archival research and how they may be used to contextualize the cultural underpinnings of datasets. Students will learn how to visualize datasets in ways that foreground their socio-political provenance in R. Students will also learn how ethnographic methods can be leveraged to improve data documentation and communication. The course will introduce debates regarding the politics of techno-scientific fieldwork. Upon completion of this course, you should be able to:
 
-1. Recognize and communicate the cultural underpinnings of data resources, infrastructures, and practices
+1. Recognize, interpret, and communicate the cultural underpinnings of data resources, infrastructures, and practices
 2. Define and engage principal methods of ethnography and communicate when and how they may be used in the study of data
 3. Strategically apply relevant ethnographic methods to the study of a data setting or artifact
 4. Produce data documentation and visualizations that account for the cultural contexts of data production, categorization, measurement, and use
 
-## When and where does this course meet?
+Classes will be held on Mondays and Wednesdays from 9:25 PM to 10:40 PM. 
 
-Classes will be held on Tuesdays and Thursdays from 9:25 PM to 10:40 PM in Seelye 106. 
+## Course Instructor
 
-## Who is the instructor?
-
-### [Lindsay Poirier](https://www.smith.edu/academics/faculty/lindsay-poirier) 
-
-#### she/her/hers
-
-```{r, out.width = "200px", out.extra='style="float:right; padding:10px"'}
+::: {.float_image_right}
+```{r, out.width = "200px", fig.cap="Lindsay Poirier, she/her/hers"}
 knitr::include_graphics("https://www.smith.edu/sites/default/files/styles/img-faculty-detail/public/media/Faculty/Lindsay-Poirier.jpg?itok=e_p62zj6")
 ```
+
+:::
+
 I am a cultural anthropologist that studies how civic data gets produced, how communities think about and interface with data, and how data infrastructure can be designed more equitably. My Ph.D. is in an interdisciplinary discipline called Science and Technology Studies - a field that studies the intricate ways science, technology, culture, and politics all co-constitute each other. I work on a number of collaborative research projects that leverage public data to deepen understanding of social and environmental inequities in the US, while also qualitatively studying the politics behind data gaps and inconsistencies. As an instructor, I prioritize active learning and often structure courses as flipped classrooms. You can expect in-class time to predominantly involve group activities and live problem-solving exercises.
 
-### How can I get in touch with the instructor?
+### Getting in Touch
 
-#### Slack
+```{r}
+bs_accordion(id = "connecting") %>%
+  bs_set_opts(panel_type = "info", use_heading_link = TRUE) %>%
+  bs_append(title = "Slack", content = includeMarkdown("md/slack.md")) %>%
+  bs_set_opts(panel_type = "info") %>%
+  bs_append(title = "Student Consultation Hours", content = includeMarkdown("md/office-hours.md")) 
 
-The fastest way to get in touch with me is via Slack. If you have course related questions, I encourage you to ask them in the #sds-237-questions channel. When discretion is needed, feel free to DM. Please reserve more formal concerns like grades or accommodation requests for an in-person (or in-person virtual) conversation. 
-
-*During the week, I will try my best to answer all Slack messages within 24 hours of receiving them. Please note that to maintain my own work-life balance, I often don't answer Slack messages on the weekends. It's important that you plan when you start your assignments accordingly.*
-
-#### Student Consultation Hours
-
-* Wednesdays 10AM to 11AM, McConnell 212
-* Fridays 10AM to 11AM, virtual
-
-Student consultation hours are a great opportunity for us to chat about what you're learning in the course, clarify expectations on assignments, and review work in progress. I also love when students drop in to consultation hours to request book recommendations, discuss career or research paths, or just to say hi! I encourage each student in the course to visit my office (physical or virtual) at least once this semester. If you're unable to attend my consultation hours at the regularly scheduled time, feel free to direct message me on Slack to coordinate a time. 
-
-```{r, out.width = "100px", out.extra='style="float:right; margin-left:20px"'}
-knitr::include_graphics("https://www.dukeupress.edu/Assets/Books/978-0-8223-7089-5_pr.jpg")
 ```
 
-## What are the course texts?
+## Course Texts
 
 This semester we will be reading Crystal Biruk's [**Cooking Data: Culture and Politics in an African Research World**](https://www.dukeupress.edu/cooking-data). The book should be available at the Smith bookstore. I will make all other course readings available on Perusall, which can be accessed through our course Moodle page. 
 
-## How much time should I expect to prepare for this course?
-
-This is a 4-credit course with 3 hours per week of in-classroom instructions. Smith expects students to devote 9 out-of-class hours per week to 4-credit classes. I have designed the course assignments and selected the course readings with this target in mind.
-
-## How will I be graded?
+## Assessment
 
 This course will be graded via a [grading contract](grading_contract.html).
 
-## What are the course policies?
+## Course Policies, Expectations, and Support
 
-### What is the course policy on attendance?
+```{r}
+bs_accordion(id = "policies") %>%
+  bs_set_opts(panel_type = "primary", use_heading_link = TRUE) %>%
+  bs_append(title = "Preparation", content = includeMarkdown("md/preparation.md")) %>%
+  bs_set_opts(panel_type = "primary") %>%
+  bs_append(title = "Attendance", content = includeMarkdown("md/attendance.md")) %>%
+  bs_set_opts(panel_type = "primary") %>%
+  bs_append(title = "Late Assignments", content = includeMarkdown("md/late-policy.md")) %>%
+  bs_set_opts(panel_type = "primary") %>%
+  bs_append(title = "Participation", content = includeMarkdown("md/participation.md")) %>%
+  bs_set_opts(panel_type = "primary") %>%
+  bs_append(title = "Course Readings", content = includeMarkdown("md/readings.md")) %>%
+  bs_set_opts(panel_type = "primary") %>%
+  bs_append(title = "Academic Honesty", content = includeMarkdown("md/academic-honesty.md")) %>%
+  bs_set_opts(panel_type = "primary") %>%
+  bs_append(title = "Code of Conduct", content = includeMarkdown("md/code-of-conduct.md")) %>%
+  bs_set_opts(panel_type = "primary") %>%
+  bs_append(title = "Principles of Community", content = includeMarkdown("md/principles-of-community.md")) %>%
+  bs_set_opts(panel_type = "primary") %>%
+  bs_append(title = "Pronouns", content = includeMarkdown("md/pronouns.md")) %>%
+  bs_set_opts(panel_type = "primary") %>%
+  bs_append(title = "Accommodations", content = includeMarkdown("md/accommodations.md")) %>%
+  bs_set_opts(panel_type = "primary") %>%
+  bs_append(title = "Student Well-being", content = includeMarkdown("md/wellbeing.md")) %>%
+  bs_set_opts(panel_type = "primary") %>%
+  bs_append(title = "Trigger Warnings", content = includeMarkdown("md/trigger-warning.md"))
 
-Classroom discussions and activities will provide you with an opportunity to work through complex concepts and apply and reflect on what you've learned in course readings in collaboration with your colleagues. Attending class is not only supporting your own success in this course, but is also an act of community. All but three absences will count in calculating the grade, but I will be flexible and considerate in specific cases. If you are sick or burnt out, please stay home (even if you've already surpassed the absences allotted for your contracted grade). In these cases, reach out to me in advance of class so that we can coordinate a make-up assignment. You should be present for at least 75% of the class period for your attendance to count.
+```
 
-### What is the course policy on late assignments?
+## Resources
 
-I understand that you will sometimes need to prioritize other things over meeting assignment deadlines (e.g. your health, wellness, families, communities, jobs, other coursework). I also want to ensure that I can provide feedback on your writing in time for you to incorporate it into future assignments. My late policy attempts to balance flexibility with accountability. There is a 24-hour grace period on all written assignments. There will be no penalties for submitting the assignment within this 24-hour period. You can also request up to a 48-hour extension on any written assignment, as long as you make that request at least 48 hours before the original assignment due date. You can request an extension by filling out the Extension Request form on Moodle, and all extended deadlines will appear on Moodle. *Reading assignments/Perusall annotations need to be completed by the due date for credit.*
+```{r}
+bs_accordion(id = "resources") %>%
+  bs_set_opts(panel_type = "success", use_heading_link = TRUE) %>%
+  bs_append(title = "Moodle", content = "Grades, forms, and handouts will be available on the course Moodle." ) %>%
+  bs_set_opts(panel_type = "success") %>%
+  bs_append(title = "Perusall", content = "Aside from the main course text, all course readings and recorded lectures will be available on Perusall. You can access Perusall via the reading assignments linked from our course Moodle page.") %>%
+  bs_set_opts(panel_type = "success") %>%
+  bs_append(title = "Slack", content = includeMarkdown("md/course-slack.md")) %>%
+  bs_set_opts(panel_type = "success") %>%
+  bs_append(title = "GitHub and GitHub Classroom", content = "I will be using GitHub Classroom to distribute several course assignments, and you will submit assignments by pushing changes to template documents to a private GitHub repository. Early checkpoints towards the final project will help you navigate how we will use GitHub in this course. ") %>%
+  bs_set_opts(panel_type = "success") %>%
+  bs_append(title = "RStudio", content = "Most assignments for this course will be drafted in RMarkdown. Early checkpoints towards the final project will help you install RStudio, connect it to GitHub, and learn how to write in R Markdown.") %>%
+  bs_set_opts(panel_type = "success") %>%
+  bs_append(title = "Jacobson Center", content = includeMarkdown("md/writing-support.md"))
 
-### How will I be expected to participate during class?
-
-Active participation in this course is generally expected and encouraged. That said, we all have off-days - be it from illness, sadness, heartbreak, or exhaustion. I too will have off-days where my words just don't seem to cohere, or my brain will feel jumbled. Because of this, I've provided a number of ways to earn engagement credit throughout the semester.  
-
-### How will I be expected to engage with course readings?
-
-I have put a lot of thought into the assigned readings for this course - aiming to select pieces that are relevant, engaging, challenging, accessible, and represent a diverse set of voices. Our classroom discussions will be much richer, more meaningful, and fun when all students come to class having completed and annotated all assigned course readings. While I know that reading may seem like a low priority when you have impending assignments that you need to physically hand-in, I encourage you not to wait until the last minute to complete course readings. You will get the most out of the content if you give yourself time to digest and reflect on it. 
-
-If you are struggling to keep up with the readings, please reach out to me. I'm more than happy to talk through effective reading strategies and to provide more guidance on what I'd like you to get out of a specific piece. Mid-way through the semester, I will give you an opportunity to reflect on and self-assess your reading engagement and participation in classroom discussions. 
-
-### What are Smith's expectations on academic honesty?
-
-> Smith College expects all students to be honest and committed to the principles of academic and intellectual integrity in their preparation and submission of course work and examinations. Students and faculty at Smith are part of an academic community defined by its commitment to scholarship, which depends on scrupulous and attentive acknowledgement of all sources of information, and honest and respectful use of college resources.
-
-Any cases of dishonesty or plagiarism will be reported to the Academic Honor Board. Examples of dishonesty or plagiarism include:
-
-* Submitting work completed by another student as your own.
-* Copying and pasting words from sources without quoting and citing the author.
-* Paraphrasing material from another source without citing the author.
-* Failing to cite your sources correctly. 
-* Falsifying or misrepresenting information in submitted work.
-* Paying another student or service to complete assignments for you.
-
-## How will we cultivate an inclusive and equitable community both in and outside of the classroom?
-
-### Code of Conduct
-
-As the instructor for this course, I am committed to making participation in this course a harassment-free experience for everyone, regardless of level of experience, gender, gender identity and expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, age, or religion. Examples of unacceptable behavior by participants in this course include the use of sexual language or imagery, derogatory comments or personal attacks, trolling, public or private harassment, insults, or other unprofessional conduct.
-
-As the instructor I have the right and responsibility to point out and stop behavior that is not aligned to this Code of Conduct. Participants who do not follow the Code of Conduct may be reprimanded for such behavior. Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the instructor.
-
-All students and the instructor are expected to adhere to this Code of Conduct in all settings for this course: seminars, office hours, and over Slack.
-
-This Code of Conduct is adapted from the [Contributor Covenant](https://www.contributor-covenant.org/), version 1.0.0, available [here](https://www.contributor-covenant.org/version/1/0/0/code-of-conduct/).
-
-### Principles of Community
-
-I hope that we can foster a collaborative and caring environment in this classroom: one that celebrates successes, respects individual strengths and weaknesses, demonstrates compassion for each other's struggles, and affirms diverse identities  Here are some ideas that I have for creating this environment in our course:
-
-* If a classmate helps you out on an assignment, says something brilliant that solidifies the material for you, or just listens when you've had a bad day, give them a shout-out on our #sds-237-appreciation Slack channel. 
-* Check-in with colleagues before starting collaborative work. "What three words describe how you're feeling?" "Name one challenge and one success from this week." "What are you doing for self-care right now?" Thank each other for sharing where they're at.
-* Consider when to step up and when to step back in class discussions, creating space for others to contribute. Listening is just as important to community-building as speaking. 
-* Acknowledge that there is much we don't know about how our colleagues experience the world. ...but don't ask colleagues to speak on behalf of a social group you perceive them to be a part of. 
-* Cheer on colleagues as they give presentations or try something out for the first time. 
-* Ask questions often in our #sds-237-questions channel. Help each other out by answering questions when you can. 
-* Let us know about your successes in the #sds-237-celebrations channel. Successes come in all shapes and sizes. Some days getting out of bed is a success. Congratulate each other on all forms of successes. 
-* Mistakes happen. I will certainly make mistakes in class. Admit mistakes, and then move on.
-
-### Pronouns
-
-Using the proper pronouns for our students is foundational to a safe, respectful classroom environment that creates a culture of trust. For information on pronouns and usage, please see the Office of Equity and Inclusion link here: [Pronouns](https://www.smith.edu/about-smith/equity-inclusion/gender-identity/pronouns)
-
-### Accommodations
-
-It is my goal for everyone to succeed in this course. If you have personal circumstances that may impact your experience of our classroom, I encourage you to contact Office of Disability Services in College Hall 104 or at [ods@smith.edu](mailto:ods@smith.edu). The Office will generate a letter that indicates to me what kind of support you need and how I can make your classroom experience more accommodating. Once you have this letter, you are welcome to visit my office hours or email me to discuss ideas about how we can tailor the course accordingly. While you can request accommodations at any time, the sooner we start this conversation, the better. If you have concerns about the course that are not addressed through ODS, please contact me. At no point will I ask you to divulge details about your personal circumstances to me. 
-
-### Student Well-being
-
-College life is stressful, and life outside of college can be overwhelming. It is my position that attending to your physical and mental health and well-being should be a top priority. I will remind you of this often throughout the quarter. I encourage you to schedule a time to talk with me if you are struggling with this course. If you, or anyone you know, is experiencing distress, there are numerous campus resources that can provide support via the [Schacht Center](https://www.smith.edu/student-life/health-wellness). I can point you to these resources at any time throughout the quarter.
-
-### Trigger Warnings
-
-A trigger is a topic or image that can precipitate an intense emotional response. When common triggering topics are to be covered in this course, I will do my best to provide a trigger warning in advance of the discussion. However, I can't always anticipate triggers. With this in mind I've set up an anonymous form, available on Moodle, where you can indicate topics for which you would like me to provide a warning. 
-
-## What resources are available to help me succeed in this course?
-
-### Moodle
-
-Assignments, grades, forms, and handouts will be available on the course Moodle. 
-
-### Perusall
-
-Aside from the main course text, all course readings and recorded lectures will be available on Perusall. You can access Perusall via the reading assignments linked from our course Moodle page.
-
-### Slack 
-
-* #general: Course announcements and links to relevant news articles and opportunities 
-* #sds-237-questions: Ask and answer questions about our course
-* #sds-237-appreciation: Acknowledge colleagues that have been helpful
-* #sds-237-celebrations: Share success of all shapes and sizes
-* You can also create private Slack channels with your project group members. 
-
-Contributing regularly to Slack is one way to earn engagement credit. 
-
-### GitHub and GitHub Classroom
-
-I will be using GitHub Classroom to distribute final project assignments, and you will submit assignments by pushing changes to template documents to a private GitHub repository. Early checkpoints towards the final project will help you navigate how we will use GitHub in this course. 
-
-### RStudio
-
-The final project for this course will be drafted in R Markdown. Early checkpoints towards the final project will help you install RStudio, connect it to GitHub, and learn how to write in R Markdown.
-
-### Jacobson Center
-
-Smith's [Jacobson Center](https://www.smith.edu/academics/jacobson-center) asserts that *all* students can improve their communication and learning skills. I encourage all students to take advantage of their writing support services, workshops, and tutors. 
-
-
-
-
-
+```

@@ -1,241 +1,83 @@
 ---
 title: "Schedule"
-output: rmdformats::readthedown
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
-## Sept. 2 Introductions
+```{r imports, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(bsplus)
+library(fontawesome)
+library(htmltools)
+library(RefManageR)
+library(lubridate)
+
+bib <- ReadBib("DataEthnography.bib")
+BibOptions(check.entries = FALSE, 
+           bib.style = "authoryear", 
+           style = "html",
+           dashed = TRUE,
+           first.inits = FALSE, 
+           no.print.fields = "issn")
+
+topics <- read.csv("data/topics.csv") %>%
+  mutate(date = mdy(date)) %>%
+  arrange(date)
+
+required_reading <- read.csv("data/required_reading.csv")
+optional_reading <- read.csv("data/optional_reading.csv")
+standards <- read.csv("data/standards.csv")
+topic_standards <- read.csv("data/topic_standards.csv")
+writing_assignments <- read.csv("data/writing_assignments.csv")
+project_assignments <- read.csv("data/project_assignments.csv")
+
+required_reading[required_reading == ""] <- NA
+optional_reading[optional_reading == ""] <- NA
+standards[standards == ""] <- NA
+topic_standards[topic_standards == ""] <- NA
+writing_assignments[writing_assignments == ""] <- NA
+project_assignments[project_assignments == ""] <- NA
+
+topic_standards <- 
+  topic_standards %>%
+  left_join(standards)
+```
+
+```{r source-files, include=FALSE}
+source("R/print_assignments.R", local = knitr::knit_global())
+source("R/buttons.R", local = knitr::knit_global())
+```
+
+<div class="alert alert-dismissible alert-info">
+  Styling and infrastructure for this page inspired by <a class="white-link" rel="license" href="https://beanumber.github.io/sds192/schedule.html">related syllabi</a> produced by Ben Baumer and R. Jordan Crouser.
+</div>
+
+```{r print-schedule, message=FALSE, results='asis'}
+for (i in 1:nrow(topics)){
+  
+  todays_topic <- topics %>%
+    slice(i)
+  
+  date_format <- stamp("January 17, 1999")
+  
+  cat(paste("## ", date_format(ymd(todays_topic$date[1]))))
+  cat("\n")
+  cat(paste("### ", todays_topic$topic[1], " {.tabset}"))
+  cat("\n")
+  print_this_week_standards_buttons(todays_topic$topic_abbr[1])
+  cat("\n")
+  cat("\n")
+  cat("#### Due Today")
+  cat("\n")
+  print_due_today(todays_topic$topic_abbr[1])
+  cat("\n")
+  cat("#### Optional Further Reading")
+  cat("\n")
+  print_further_reading(todays_topic$topic_abbr[1])
+  cat("\n")
+}
+```
 
-## Sept. 7 Hegemonic Backdrops of Big Data
 
-* boyd, danah, and Kate Crawford. 2012. "Critical Questions for Big Data." *Information, Communication & Society* 15 (5): 662–79. https://doi.org/10.1080/1369118X.2012.678878.
-* Project Checkpoint 1: Fill out CATME Survey
-
-> We will be using CATME to collect information for creating equitable project teams this semester. In the first week of class, you will receive an email from CATME with instructions on how to fill out a survey. To complete this checkpoint, you should follow these instructions. 
-
-### Optional further reading:
-
-* Kitchin, Rob. 2014. "Big Data, New Epistemologies and Paradigm Shifts." *Big Data & Society* 1 (1). https://doi.org/10.1177/2053951714528481.
-* Leonelli, S. 2014. "What Difference Does Quantity Make? On the Epistemology of Big Data in Biology:" *Big Data & Society* https://doi.org/10.1177/2053951714534395.
-* Onuoha, Mimi. 2016. "The Point of Collection." *Medium*. October 31, 2016. https://points.datasociety.net/the-point-of-collection-8ee44ad7c2fa.
-
-## Sept. 9 Metaphors of Big Data
-
-* Levy, Tim Hwang, Karen. 2015. "'The Cloud' and Other Dangerous Metaphors." *The Atlantic*. January 20, 2015. https://www.theatlantic.com/technology/archive/2015/01/the-cloud-and-other-dangerous-metaphors/384518/.
-* Puschmann, Cornelius, and Jean Burgess. 2014. "Metaphors of Big Data." *International Journal of Communication* 8 (0): 20.
-
-### Optional further reading:
-
-* Watson, Sarah M. n.d. "Data is the New "_____"." *DIS Magazine* (blog)*. Accessed August 30, 2021. http://dismagazine.com/discussion/73298/sara-m-watson-metaphors-of-big-data/.
-
-## Sept. 14 Thick Data for Big Data
-
-* Fiore-Silfvast, Brittany. 2014. "Hacked Ethnographic Fieldnotes." *Astro Hack Week*. October 1, 2014. http://astrohackweek.github.io/blog/ethnographic-notes.html.
-* Burrell, Jenna. 2012. "The Ethnographer’s Complete Guide to Big Data: Small Data People in a Big Data World." *Ethnography Matters*. May 28, 2012. http://ethnographymatters.net/blog/2012/05/28/small-data-people-in-a-big-data-world/.
-* Project Checkpoint 2: [Practice GitHub Classroom and Markdown](https://github.com/SDS-237-Data-Ethnography/getting-started)
-
-### Optional further reading:
-
-* Wang, Tricia. 2013. "Big Data Needs Thick Data." *Ethnography Matters*. May 13, 2013. http://ethnographymatters.net/blog/2013/05/13/big-data-needs-thick-data/.
-
-## Sept. 16 Ethnography in Data Land
-
-* Read: Introduction Cooking Data
-
-## Sept. 21 Data Looping Effects
-
-* Kitchin, Rob, and Tracey P. Lauriault. 2014. "Towards Critical Data Studies: Charting and Unpacking Data Assemblages and Their Work." *SSRN Scholarly Paper ID 2474112*. Rochester, NY: Social Science Research Network. https://papers.ssrn.com/abstract=2474112.
-* Project Checkpoint 3: [Group Contract](https://github.com/SDS-237-Data-Ethnography/group-contract)
-
-### Optional further reading:
-
-* Hacking, Ian. 2006. "Making Up People." *London Review of Books* 28 (August).
-* Urla, Jacqueline. 1993. "Cultural Politics in an Age of Statistics: Numbers, Nations, and the Making of Basque Identity." *American Ethnologist* 20 (4): 818–43.
-* Kristensen, Dorthe Brogård, and Minna Ruckenstein. 2018. "Co-Evolving with Self-Tracking Technologies." *New Media & Society* 20 (10): 3624–40. https://doi.org/10.1177/1461444818755650.
-
-## Sept. 23 Making Measures Commensurate: Translation and Reductionism
-
-* Read: Chapter 1, Cooking Data
-* Field Notebook Entry 1
-
-### Optional further reading:
-
-* Espeland, Wendy Nelson, and Mitchell L. Stevens. 1998. "Commensuration as a Social Process." *Annual Review of Sociology* 24 (1): 313–43. https://doi.org/10.1146/annurev.soc.24.1.313.
-* Merry, Sally Engle. 2016. *The Seductions of Quantification: Measuring Human Rights, Gender Violence, and Sex Trafficking*. University of Chicago Press.
-
-## Sept. 28 Ethnographies of Infrastructure
-
-* Star, Susan Leigh. 1999. "The Ethnography of Infrastructure." *American Behavioral Scientist* 43 (3): 377–91. https://doi.org/10.1177/00027649921955326.
-* Project Checkpoint 4: Semiotic Analysis
-
-### Optional further reading:
-
-* Lampland, Martha, and Susan Leigh Star, eds. 2008. *Standards and Their Stories: How Quantifying, Classifying, and Formalizing Practices Shape Everyday Life*. 1 edition. Ithaca: Cornell University Press.
-* Timmermans, Stefan, and Steven Epstein. 2010. "A World of Standards but Not a Standard World: Toward a Sociology of Standards and Standardization*." *Annual Review of Sociology* 36 (1): 69–89. https://doi.org/10.1146/annurev.soc.012809.102629.
-* Ottinger, Gwen. 2010. "Buckets of Resistance: Standards and the Effectiveness of Citizen Science." *Science, Technology, & Human Values* 35 (2): 244–70. https://doi.org/10.1177/0162243909337121.
-
-## Sept. 30 Sorting Things Out: Cultural Analyses of Categories
-
-* Bowker, Geoffrey C. 1998. "The Kindness of Strangers: Kinds and Politics in Classification Systems." https://www.ideals.illinois.edu/handle/2142/8207.
-
-### Optional further reading:
-
-* Bowker, Geoffrey C., and Susan Leigh Star. 1999. *Sorting Things Out: Classification and Its Consequences*. Cambridge, MA: MIT Press.
-* Waterton, Claire. 2002. "From Field to Fantasy: Classifying Nature, Constructing Europe." *Social Studies of Science* 32 (2): 177–204. https://doi.org/10.1177/0306312702032002001.
-* Kirksey, Eben. 2015. "Species: a praxiographic study." *Journal of the Royal Anthropological Institute* 21 (4): 758–80. https://doi.org/10.1111/1467-9655.12286.
-
-## Oct. 5 Data Ghost Work
-
-* Introduction and Chapter 1: Gray, Mary L., and Siddharth Suri. 2019. *Ghost Work: How to Stop Silicon Valley from Building a New Global Underclass*. Illustrated edition. Boston: Mariner Books.
-* Project Checkpoint 5: Categorical Analysis
-
-### Optional further reading:
-
-* Irani, Lilly. 2015. "Justice for 'Data Janitors.'" *Public Books (blog)*. January 15, 2015. https://www.publicbooks.org/justice-for-data-janitors/.
-* Plantin, Jean-Christophe. 2019. "Data Cleaners for Pristine Datasets: Visibility and Invisibility of Data Processors in Social Science." *Science, Technology, & Human Values* 44 (1): 52–73. https://doi.org/10.1177/0162243918781268.
-
-## Oct. 7 Invisible Labor of Data Production
-
-* Read: Chapter 2, Cooking Data
-* Field Notebook Entry 2
-
-### Optional further reading:
-
-* Forsythe, Diana E. 1993. "The Construction of Work in Artificial Intelligence." *Science, Technology, & Human Values* 18 (4): 460–79. https://doi.org/10.1177/016224399301800404.
-
-## Oct. 12 - NO CLASS
-
-## Oct. 14 Lab Day
-
-* Project Checkpoint 6: Peopling a Dataset
-* Mini-Project 1 Due
-
-## Oct. 19 Judgment and Affect in Data Collection
-
-* TBD
-* Project Checkpoint 7: Revisions of 1-5
-
-### Optional further reading:
-
-* Lorimer, Jamie. 2008. "Counting Corncrakes: The Affective Science of the UK Corncrake Census." *Social Studies of Science* 38 (3): 377–405. https://doi.org/10.1177/0306312707084396.
-* Garnett, Emma. 2016. "Developing a Feeling for Error: Practices of Monitoring and Modelling Air Pollution Data." *Big Data & Society* 3 (2). https://doi.org/10.1177/2053951716658061.
-* Pine, Kathleen H. 2019. "The Qualculative Dimension of Healthcare Data Interoperability." *Health Informatics Journal* 25 (3): 536–48. https://doi.org/10.1177/1460458219833095.
-
-## Oct. 21 Economies of Data Production: Transactions and Incentives
-
-* Reading: Chapter 3 Cooking Data
-* Field Notebook Entry 3
-
-### Optional further reading:
-
-* Gerlitz, Carolin, and Anne Helmond. 2013. "The like Economy: Social Buttons and the Data-Intensive Web." *New Media & Society* 15 (8): 1348–65. https://doi.org/10.1177/1461444812472322.
-* Beer, David. 2015. "Productive Measures: Culture and Measurement in the Context of Everyday Neoliberalism." *Big Data & Society* 2 (1). https://doi.org/10.1177/2053951715578951.
-
-## Oct. 26 How Data Domesticates Us: Rituals for Data Cleaning
-
-* Ribes, David, and Steven J Jackson. 2013. "Data Bite Man: The Work of Sustaining a Long-Term Study." In *Raw Data Is an Oxymoron*, edited by Lisa Gitelman, 147–66. Cambridge, MA: MIT Press.
-* Project Checkpoint 8: Documentary Analysis, Part 1
-
-### Optional further reading:
-
-* Bowker, Geoffrey C. 2000. "Biodiversity Datadiversity." *Social Studies of Science* 30 (5): 643–83. https://doi.org/10.1177/030631200030005001.
-* Walford, Antonia. 2017. "Raw Data: Making Relations Matter." *Social Analysis* 61 (2): 65–80. https://doi.org/10.3167/sa.2017.610205.
-* Pink, Sarah, Shanti Sumartojo, Deborah Lupton, and Christine Heyes La Bond. 2017. "Mundane Data: The Routines, Contingencies and Accomplishments of Digital Living." *Big Data & Society* 4 (1). https://doi.org/10.1177/2053951717700924.
-
-## Oct. 28 Cooking Data
-
-* Reading: Chapter 4, Cooking Data
-
-## Nov. 2 Authoring Data Documentation
-
-* Project Checkpoint 9: Documentary Analysis, Part 2
-* Field Notebook Entry 4
-
-* Gebru, Timnit, Jamie Morgenstern, Briana Vecchione, Jennifer Wortman Vaughan, Hanna Wallach, Hal Daumé III, and Kate Crawford. 2020. "Datasheets for Datasets." *ArXiv:1803.09010 [Cs]*, March. http://arxiv.org/abs/1803.09010.
-
-### Optional further reading:
-
-* Bender, Emily M., and Batya Friedman. 2018. "Data Statements for Natural Language Processing: Toward Mitigating System Bias and Enabling Better Science." *Transactions of the Association for Computational Linguistics* 6 (December): 587–604. https://doi.org/10.1162/tacl_a_00041.
-
-## Nov. 4 - NO CLASS
-
-## Nov. 9 Mobilizing Data: Making Numbers Actionable
-
-* Ottinger, Gwen, and Rachel Zurer. 2011. "New Voices, New Approaches: Drowning in Data." *Issues in Science and Technology (blog)*. 2011. https://issues.org/ottinger/.
-* Project Checkpoint 10: Revisions
-
-### Optional further reading:
-
-* Pine, Kathleen H., and Max Liboiron. 2015. "The Politics of Measurement and Action." In *Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems*, 3147–56. New York, NY, USA: Association for Computing Machinery. https://doi.org/10.1145/2702123.2702298.
-* Dourish, Paul, and Edgar Gómez Cruz. 2018. "Datafication and Data Fiction: Narrating Data and Narrating with Data." *Big Data & Society* 5 (2). https://doi.org/10.1177/2053951718784083.
-
-## Nov. 11 Data Circulation
-
-* Reading: Chapter 5, Cooking Data
-* Mini-Project 2 Due
-
-### Optional further reading: 
-
-* Bates, Jo, Yu-Wei Lin, and Paula Goodale. 2016. "Data Journeys: Capturing the Socio-Material Constitution of Data Objects and Flows." *Big Data & Society* 3 (2). https://doi.org/10.1177/2053951716654502.
-* Leonelli, Sabina. 2010. "Packaging Small Fact for Re-Use: Databases in Model Organism Biology." In *How Well Do Facts Travel?: The Dissemination of Reliable Knowledge*, edited by Peter Howlett and Mary S. Morgan, 325–48. Cambridge, MA: Cambridge University Press.
-
-## Nov. 16 Mobilizing Data Otherwise: Citizen Science and Sensing 
-
-* Gabrys, Jennifer, Helen Pritchard, and Benjamin Barratt. 2016. "Just Good Enough Data: Figuring Data Citizenships through Air Pollution Sensing and Data Stories." *Big Data & Society* 3 (2). https://doi.org/10.1177/2053951716679677.
-* Project Checkpoint 11: Discourse Analysis
-
-### Optional further reading:
-
-* Calvillo, Nerea. 2018. "Political Airs: From Monitoring to Attuned Sensing Air Pollution." *Social Studies of Science* 48 (3): 372–88. https://doi.org/10.1177/0306312718784656.
-* Jalbert, Kirk, and Abby J. Kinchy. 2016. "Sense and Influence: Environmental Monitoring Tools and the Power of Citizen Science." *Journal of Environmental Policy & Planning* 18 (3): 379–97. https://doi.org/10.1080/1523908X.2015.1100985.
-
-## Nov. 18 Data Activism
-
-* Liboiron, Max. 2015. "Disaster Data, Data Activism: Grassroots Responses to Representing Superstorm Sandy." In *Extreme Weather and Global Media*, edited by Julia Leyda and Diane Negra. Taylor & Francis Group. https://doi.org/10.4324/9781315756486-7.
-* Field Notebook Entry 5
-
-### Optional further reading:
-
-* Bruno, Isabelle, Emmanuel Didier, and Tommaso Vitale. 2014. "Statactivism: Forms of Action between Disclosure and Affirmation." *SSRN Scholarly Paper ID 2466882*. Rochester, NY: Social Science Research Network. https://papers.ssrn.com/abstract=2466882.
-* Milan, Stefania, and Lonneke van der Velden. 2016. "The Alternative Epistemologies of Data Activism." *Digital Culture & Society* 2 (2): 57–74. https://doi.org/10.14361/dcs-2016-0205.
-* Currie, Morgan, Britt S Paris, Irene Pasquetto, and Jennifer Pierre. 2016. "The Conundrum of Police Officer-Involved Homicides: Counter-Data in Los Angeles County." *Big Data & Society* 3 (2). https://doi.org/10.1177/2053951716663566.
-
-## Nov. 23 - PROJECT CONSULTATIONS
-
-* Mini-Project Peer Review Workshop
-* Project Checkpoint 12: Chrono-politics and geo-politics
-
-## Nov. 25 - NO CLASS
-
-## Nov. 30 Data Agnotology: Ignorance and Knowledge Gaps
-
-* mimimimimi. (2016) 2021. On Missing Data Sets. https://github.com/MimiOnuoha/missing-datasets.
-* Milan, Stefania, and Emiliano Treré. 2020. "The Rise of the Data Poor: The COVID-19 Pandemic Seen From the Margins." Social Media + Society 6 (3). https://doi.org/10.1177/2056305120948233.
-* Project Checkpoint 13: Knowledge gaps
-
-### Optional further reading:
-
-* D’Ignazio, Catherine, and Lauren F. Klein. 2020. *Data Feminism*. Cambridge, Massachusetts: The MIT Press.
-
-## Dec. 2 Data and Algorithmic Power
-
-* Eubanks, Virginia. 2018. "A Child Abuse Prediction Model Fails Poor Families." *Wired*, January 15, 2018. https://www.wired.com/story/excerpt-from-automating-inequality/.
-* Field Notebook Entry 6
-
-### Optional further reading:
-
-* Brayne, Sarah. 2017. "Big Data Surveillance: The Case of Policing." *American Sociological Review* 82 (5): 977–1008. https://doi.org/10.1177/0003122417725865.
-* Seaver, Nick. 2017. "Algorithms as Culture: Some Tactics for the Ethnography of Algorithmic Systems." Big Data & Society 4 (2). https://doi.org/10.1177/2053951717738104.
-* Eubanks, Virginia. 2018. *Automating Inequality: How High-Tech Tools Profile, Police, and Punish the Poor.* St. Martin’s Press.
-* Christin, Angèle. 2020. "The Ethnographer and the Algorithm: Beyond the Black Box." *Theory and Society* 49 (5): 897–918. https://doi.org/10.1007/s11186-020-09411-3.
-
-## Dec. 7 Final Project Presentations
-
-* Project Checkpoint 14: Revisions and Final Presentation
-
-## Dec. 9 Final Project Presentations
-
-* Mini-Project Revisions Due

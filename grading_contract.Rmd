@@ -1,100 +1,68 @@
 ---
 title: "Grading Contract"
-output: rmdformats::readthedown
 ---
 
-This course will be using a grading contract. This means that the grade you ultimately receive for this course is primarily based on the labor that you perform rather than a subjective evaluation of the quality of your work and writing in relation to your colleagues. Your grade will be determined by the extent of your engagement in class, your timely completion of assignments, and how you support the course community. You will still attend to and work to improve the quality of your writing and thinking in this course. You will receive extensive feedback on all of your submissions (from me and from your colleagues), and you will have opportunities to revise. However, you will not receive points or an A, B, C, D, etc. on assignments. 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
 
-## Why a grading contract?
+```{r imports, message=FALSE, warning=FALSE}
+library(tidyverse)
+library(bsplus)
+library(htmltools)
+```
 
-There are many benefits to contract grading. Here are there reasons why I've opted for a grading contract in this course:
+<div class="alert alert-dismissible alert-info">
+Grading contracts have been theorized and implemented in the research of Dr. Peter Elbow and Dr. Asao Inoue. This grading contract is adapted from their work, along with the contracts of Dr. Kate Navickas and Dr. Kati Ahern.
+</div>
 
-* I want you to feel as though you can experiment with your writing in this course. Rather than focusing on what you think I want out of your assignments or "writing to the rubric," grading contracts empower you to take more risks. 
-* Grading contracts value the time and effort you put into the course and reward students who invest extra time in their learning. 
+This course will be using a grading contract. This means that the grade you ultimately receive for this course is primarily based on the labor that you perform rather than a subjective evaluation of the quality of your work and writing in relation to your colleagues. Your grade will be determined by the extent of your engagement in class, your timely completion of assignments, and how you support the course community. You will still attend to and work to improve the quality of your writing and thinking in this course. You will receive extensive feedback on all of your submissions (from me and from your colleagues), and you will have opportunities to revise. However, you will not receive points or an A, B, C, D, etc. on assignments.
+
+I've experimented with a few alternative grading systems, and I'm particularly excited to continue engaging this system this semester as I believe it aligns with my overarching goals for the course. In this course I am less concerned with your ability to come to a specific answer, to master certain procedures, or to produce standardized deliverables. I'm more concerned with the extent to which this course enables you become more perceptive to data environments, to deepen your critical thinking about data's cultural meanings, to experiment with your thinking and writing, and to grapple with ethical dilemmas. There's always room for strengthening these thinking modes further; in fact, every time I teach this course, I find that my own ability to think critically about data deepens through classroom discussions and my reading of student work.
+
+There are many benefits to contract grading. Here are there reasons why I’ve opted for a grading contract in this course:
+
+* I want you to feel as though you can experiment with your writing in this course. Rather than focusing on what you think I want out of your assignments or "writing to the rubric," grading contracts empower you to take more risks.
+* Grading contracts value the time and effort you put into the course and reward students who invest extra time in their learning.
 * Grading contracts make it easier for you to anticipate the grade you will receive and plan for achieving that grade.
-* Grading contracts promote equity. With grades based entirely on labor, students aren't penalized for not entering the course with the same experience or background knowledge as their colleagues. 
+* Grading contracts promote equity. With grades based entirely on labor, students aren’t penalized for not entering the course with the same experience or background knowledge as their colleagues.
 
 ## Grade Breakdown
 
 Each row indicates what labor you need to complete in the course to earn the grade indicated in the first column of that row. Note that to earn a particular grade *all* minimum labor criteria in the corresponding row must be met.
 
-| Grade | Absences | Missed Journal Entries (out of 6) | Completed Mini-projects | Missed Checkpoints for Final Project^1^ | Incomplete Reading Annotations | Community Labor Points | Enrichment
-|---|---|---|---|---|---|---|---|
-| A | 3 or fewer | 1 or fewer | 2 + 1 substantive revision | 2 or fewer | 2 or fewer | 8 or more | 3 |
-| B | 3 or fewer | 1 or fewer | 2 + 1 substantive revision | 2 or fewer | 2 or fewer | 8 or more | 0 |
-| C | 4 or fewer | 2 or fewer | 1 + 1 substantive revision | 4 or fewer | 4 or fewer | 6 or more | 0 |
-| D | 5 or fewer | 3 or fewer | 1, no revision             | 6 or fewer | 6 or fewer | 4 or more | 0 |
-| E | 6 or more  | 4 or more  | 0                          | 7 or more  | 7 or more  | 3 or fewer| 0 |
+| Grade | Completed Journal Entries (out of 5) | Completed Mini-projects | Competed Checkpoints for Final Project | Completed Reading Annotations | Community Labor Points | Enrichment
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| A | 4 or more | 2 + 1 substantive revision | 1 draft + 1 final project | 10 or more | 8 or more | 3 |
+| B | 4 or more | 2 + 1 substantive revision | 1 draft + 1 final project | 10 or more | 8 or more | 0 |
+| C | 3 or more | 1 + 1 substantive revision | 1 draft + 1 final project | 8 or more  | 6 or more | 0 |
+| D | 2 or more | 1, no revision             | 1 draft + 1 final project | 6 or more  | 4 or more | 0 |
+| E | 1 or fewer| 0                          | 0                         | 5 or fewer | 3 or fewer| 0 |
 
-> ^1^Note that while you can miss final project checkpoints, a final draft must be submitted on time and a final presentation must be delivered in order to pass the course.
+Descriptions of each of these assignments, along with rubrics for qualitative assessment of each, will be made available to you in the GitHub repositories where you will submit work this semester. For an assignment to be considered complete, it must meet the minimum criteria outlined in the assignment description. It also must be completed "in good faith" - meaning in a way that demonstrates integrity to the spirit of the assignment.
 
-## Assignment completion
+## FAQ
 
-For an assignment to be considered complete (i.e. not *missed*), it must meet the minimum criteria outlined in Moodle. It also must be completed "in good faith" - meaning in a way that demonstrates integrity to the spirit of the assignment. Note that you have at least one "gimme" for each assignment in this course. This means that if for some reason there was a misunderstanding of the expectations for completion, in most cases, you will have an opportunity to try again as long as you haven't already missed other assignments in the same category.
+```{r}
+bs_accordion(id = "FAQ") %>%
+    bs_set_opts(panel_type = "primary", use_heading_link = TRUE) %>%
+    bs_append(title = "What do I need to do to earn an A in this course?", content = includeMarkdown("md/earning-an-a.md")) %>%
+    bs_set_opts(panel_type = "primary") %>%
+    bs_append(title = "What kind of feedback will I receive regarding my work?", content = "You will receive extensive feedback on all of your submissions (from me and from your colleagues), and you will have opportunities to revise. I will also provide rubrics for most assignments to indicate how I will evaluate your work. However, you will not receive points or an A, B, C, D, etc. on individual assignments.") %>%
+    bs_set_opts(panel_type = "primary") %>%
+    bs_append(title = "There appear to be a significant number of assignments and deadlines in this course. Why is this the case?", content = "I'll admit that this is a labor-intensive course. However, I've found the the syllabus appears more intimidating than the actual workload turns out to be. I've been very deliberate in pacing your assignments for two reasons - first, because developing the critical thinking skills required of ethnography demands building and consistently practicing observational habits, and second, to ensure there is plenty of time for you to revise work based on my feedback. If you are struggling with this course's workload, I recommend coming to talk with me in office hours.") %>%
+    bs_set_opts(panel_type = "primary") %>%
+    bs_append(title = "How can I best keep track of my labor in this course?", content = "Throughout the semester, you will be asked to keep track of your labor via a log that I will make available on Moodle. I will reference this log to calculate certain aspects of your final grade. Instructions for using the labor log will be provided in the first week of the course.") %>%
+    bs_set_opts(panel_type = "primary") %>%
+    bs_append(title = "What are reading annotations?", content = "Each week a selection of course readings will be posted as a single assignment on Perusall - a system for students to collaboratively annotate course readings. To earn this credit, you will be expected to post 3 quality annotations per assignment to Perusall. (Note that a single assignment can have multiple readings, but you need only submit 3 annotations total. You do not need to annotate every reading in the assignment.) A quality annotation is one in which you synthesize concepts, ask thought-provoking questions, or connect ideas to external issues. I have found that students get the most out of Perusall when they respond to each other's annotations. Annotations must be completed before class to receive credit.") %>%
+    bs_set_opts(panel_type = "primary") %>%
+    bs_append(title = "Can I earn +/- grades in this course?", content = "+/- will be assigned to final grades at my discretion in cases where a student's work consistently exceeds the expectations (+) of their contracted grade or is in some way insufficient (-). Students can track their progress towards a grade modifier in feedback that I provide throughout the semester.") %>%
+    bs_set_opts(panel_type = "primary") %>%
+    bs_append(title = "What if I need an extension on an assignment?", content = "There is a 24-hour grace period on all written assignments, except for reading annotations. There will be no penalties for submitting the written assignment within this 24-hour period, and you do not need to inform me that you intend to take the extra time. You can also request up to a 72-hour extension on any written assignment, as long *as you make that request at least 48 hours before the original assignment due date*. You can request an extension by filling out the Extension Request form on Moodle, and I will confirm your extension on Slack. Beyond this, late assignments will not be accepted.") %>%
+    bs_set_opts(panel_type = "primary") %>%
+    bs_append(title = "Can I ask for extensions or use the grade period for reading annotations?", content = "Reading assignments/Perusall annotations prepare you to participate in class discussions. For this reason, they need to be completed by the due date for credit. I've provided considerable leeway to miss a reading annotation assignment from time-to-time in order to accommodate flexibility in this regard.")  %>%
+    bs_set_opts(panel_type = "primary") %>%
+    bs_append(title = "An assignment deadline is approaching, and I'm unhappy with the quality of my work. What should I do?", content = "While I always encourage students to strive to submit the best work they can, this course's grading contract, coupled with the course's revision assignments, permits you to submit work that you know you want to continue to improve upon without penalty. Not submitting assignments at all has the potentially to significantly lower your grade in this course, whereas submitting an assignment that could benefit from more revision will not be determinental to your grade as long as the minimum sumbission requirements are met.")   
 
-## Assignments
+```
 
-### Attendance
-
-Please see attendance policy on the course [syllabus](index.html) for more information. 
-
-### Journal Entries
-
-Ethnographers keep field notebooks to thickly document what they observe in a social environment. Typically field notes will describe a physical environment and the participants in that environment (including appearances, roles, behaviors, moods, interactions, conversations, etc.). Field notes will also interpret what was observed, considering how the empirical material affirms, contests, or transforms how we understand cultural phenomena. In data ethnography, the social environment under consideration can be anywhere data is produced, applied, presented, or talked about. 
-
-This assignment is about paying attention to the numbers (and other forms of data) that inhabit daily life. You should select a social environment in which data plays a role and write 300-400 words, first, detailing that environment and the people involved and second, interpreting its meaning. I encourage you to be creative in selecting data environments. Perhaps you select a newspaper article where data is being used to narrate a story. Maybe you choose a data science classroom. Maybe you choose a social media post where people are reacting to a data system. Perhaps you select a data infrastructure with which people are interacting. Perhaps you write an auto-ethnography, reflecting on how your own behavior changes in response to a data collecting system.
-
-### Mini-Projects
-
-The course mini-projects will provide you with opportunities to practice ethnographic research and cultural analysis. Descriptions of the mini-projects for this course are listed [here](mini_projects.html). To earn a 'B' or higher in the course, you need to complete two of the mini-projects, along with a substantive revision of one. 
-
-### Final Project
-
-Your final project in this course will be a group project. In this project, you will produce a narrative guide, authored in R Markdown, for an open government dataset. Based on research you conduct as a group, the guide will offer critical context regarding how ideas are defined in the dataset, the history of its semantics, the social processes by which the data gets produced, how information from the dataset has disseminated, and critical knowledge gaps. Each week you of this semester, your group will complete a short assignment to help you progress towards this final output. Some weeks will be devoted to revision based on my feedback. Most checkpoints for the final project will be assigned via GitHub Classroom, and you will be expected to submit your changes to template documents I provide by pushing edits to a private GitHub repository. (Don't worry; I will walk you through how to do this!) Criteria for completion of each checkpoint are listed in Moodle. To earn a 'B' or higher in the course, your group will need to meet the listed criteria for at least 12 of the 14 checkpoints. However, I reserve the right to adjust this expectation in cases where there are clear inequitable distributions of labor within groups. 
-
-### Reading Annotations
-
-Each week a selection of course readings will be posted on Perusall. For each selection, you will be expected to post 3 quality annotations. A quality annotation is one in which you synthesize concepts, ask thought-provoking questions, or connect ideas to external issues. I have found that students get the most out of Perusall when they respond to each other's annotations. Annotations must be completed before class to receive credit. 
-
-### Community Labor Points
-
-Ethnography is at its best when it involves collaborative inquiry and interpretation. Because of this, I want to encourage us to foster a cooperative community in our classroom. Ethnographers know that building and sustaining strong communities are important and often invisible forms of labor. In an effort to foreground and reward that labor, I've built opportunities to contribute to the course community into our grading contract. To earn a 'B' or higher in the course, you will need to earn at least 8 community labor points. Note that there are certain forms of labor that you can perform more than once, but there are max points that you can earn in each category. 
-
-| Points | Labor | Max Points | 
-|-|-------------|-|
-| +1 | Contribute a unique term to our Data Ethnography glossary on Moodle. Define the term, citing relevant sources. | 2 |
-| +1 | Start a discussion thread on course-relevant topic in the #general channel on Slack. Respond to at least one other person on the thread.^1^  | 4 |
-| +0.5 | Respond to a discussion thread on Slack. | 3 |
-| +1 | Attend student consultation hours. | 2 |
-| +2 | Participate in a peer-review workshop in preparation for revising mini-projects. | 2 |
-| +1 | Lead an opening check-in.^2^ | 1 |
-| +1 | At the conclusion of a class session, summarize three take-aways.^3^ | 1 |
-| +1 | Suggest a data event for colleagues to potentially study in the #sds-237-participant-observation Slack channel | 1 |
-
-> ^1^Note that this is separate from asking a question about the course administration or assignments in the #sds-237-questions channel.
-
-> ^2^Each class we will start out by participating in a collaborative poll to check-in with where our heads are. If you sign up to lead an opening check-in, you will create this opening poll by adding a slide to a deck I will make available on Moodle. Instructions for doing so will be available on the Slide. Then at the start of class, you will be called upon to launch/lead your check-in poll. You can sign-up to lead this opening session via a Scheduler on Moodle.
-
-> ^3^Two students will have an opportunity to summarize the three take-aways at the end of every class session. Priority will be given to students who have not had an opportunity to earn these points yet. 
-
-## Enrichment
-
-'A' grades will be assigned to students that meet the requirements to earn a 'B' in the course and enrich those assignments by doing three of the following. Timelines for completing enrichment must be coordinated with me in student consultation hours *by the end of the third week of the semester.*
-
-1. Lead a 30-minute class reading discussion. In this role, you will prepare a written discussion plan that summarizes the main arguments/key points of the assigned reading (in at least 250 words, lists 5 memorable quotes from the reading with page numbers, synthesizes 2-3 key issues that came up in the Perusall threads, lists out 3-4 discussion questions, and includes 5 links to relevant articles, videos, stories, images, etc, that you may reference during discussion. During class, you will summarize the week's reading and Perusall discussions in the first 5 minutes, and then lead the class discussion, drawing from your questions and materials. 
-2. Write a 500-600-word memo reflecting on your role as the researcher in one of your ethnographic mini-projects. Think of this like a meta-analysis of the research encounter. You might address questions like: How would you characterize your standpoint in relation to the research? In what ways did your background and situated knowledge inflect how you approached your research and what you took away from it? In what moments were there communication break-downs with your informants and why? What feelings came up for you during research? What ethical considerations were you grappling with as you engaged the research?
-3. Earn the maximum (16) community labor points. 
-4. Write a 500-600-word memo synthesizing and making broader connections across at least 4 of your journal entries. What have you learned about how data and culture co-constitute each other via your fieldnotes? You might think about how data discourse, education, expertise, or infrastructures materialize, operate, transform, or get contested. Be sure to cite specific examples from each of the entries in your response. 
-
-## Labor Log
-
-Throughout the semester, you will be asked to keep track of your labor via a log that I will make available on Moodle. I will also keep track of your labor on Moodle. At the end of the semester, we will meet during consultation hours to compare logs and discuss the final grade.
-
-## +/- Grades
-
-+/- will be assigned to final grades at my discretion in cases where a student's work consistently exceeds the expectations (+) of their contracted grade or is in some way insufficient (-). Students can track their progress towards a grade modifier in feedback that I provide throughout the semester. 
-
-## Acknowledgements
-
-Grading contracts have been theorized and implemented in the research of Dr. Peter Elbow
-and Dr. Asao Inoue. This grading contract is adapted from their work, along with the contracts of Dr. Kate Navickas and Dr. Kati Ahern.
