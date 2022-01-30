@@ -1,4 +1,4 @@
-# SDS-237-public-website
+# SDS-237 Fall 2021
 
 ## About
 
